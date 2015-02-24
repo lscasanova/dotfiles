@@ -1,0 +1,17 @@
+# Make Tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# List all matches in case multiple possible completions are possible
+set show-all-if-ambiguous on
+
+# Flip through autocompletion matches with Shift-Tab.
+"\e[Z": menu-complete
+
+# Filtered history search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
+set input-meta on
+set output-meta on
+set convert-meta off

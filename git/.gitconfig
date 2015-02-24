@@ -1,0 +1,11 @@
+[user]
+	name = Leandro Casanova
+	email = casanova.leandro@gmail.com
+[credential]
+	helper = cache
+[core]
+    excludesfile = /home/leandro/.gitignore_global
+    editor = subl
+
+[github]
+    user = lscasanova
