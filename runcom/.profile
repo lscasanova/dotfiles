@@ -21,7 +21,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-for DOTFILE in `find /home/leandro/dev/dotfiles/system`
-do
-  [ -f “$DOTFILE” ] && source “$DOTFILE”
+for file in ~/dev/dotfiles/system/.{aliases,env}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done
+unset file;
+

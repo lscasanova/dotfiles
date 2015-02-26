@@ -1,10 +1,19 @@
 #!/bin/bash
 
+# The symlinks
+ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
+ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
+ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
+ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+
 # Install essential apps
 sudo apt-get install -q -y \
     git-core python-dev build-essential gunicorn dkms tree \
     postgresql postgresql-client libpq-dev postgresql-contrib \
     msttcorefonts
+
+# Makes sure the repository is up to date
+git pull origin master
 
 
 # Reload fonts cache
@@ -19,14 +28,8 @@ if [[ -z `which google-chrome` ]]; then
     sudo apt-get install google-chrome-stable
 fi
 
-# Install dotfiles
-if [ ! -d ~/dev/dotfiles ]; then
-    mkdir -p ~/dev
-    pushd ~/dev
-    git clone git@github.com:lscasanova/dotfiles.git
-    . ~/dev/dotfiles/dotfiles.sh
-    popd
-fi
+
+
 
 # Python stuff
 sudo pip install -r ~/dev/dotfiles/python/requirements.txt
