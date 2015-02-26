@@ -27,5 +27,5 @@ if [[ -z `which google-chrome` ]]; then
 fi
 
 # Python stuff
-sudo pip install -r ~/dev/dotfiles/python/requirements.txt
+sudo pip install -r ~/dev/dotfiles/python/requirements.txt -U
 mkdir -p ~/.virtualenvs
