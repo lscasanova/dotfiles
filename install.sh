@@ -13,10 +13,10 @@ sudo fc-cache -fv
 git pull origin master
 
 # The symlinks
-ln -sfv "~/dev/dotfiles/runcom/.profile" ~
-ln -sfv "~/dev/dotfiles/runcom/.inputrc" ~
-ln -sfv "~/dev/dotfiles/git/.gitconfig" ~
-ln -sfv "~/dev/dotfiles/git/.gitignore_global" ~
+ln -sfv "/home/leandro/dev/dotfiles/runcom/.profile" ~
+ln -sfv "/home/leandro/dev/dotfiles/runcom/.inputrc" ~
+ln -sfv "/home/leandro/dev/dotfiles/git/.gitconfig" ~
+ln -sfv "/home/leandro/dev/dotfiles/git/.gitignore_global" ~
 
 # Google Chrome
 if [[ -z `which google-chrome` ]]; then
