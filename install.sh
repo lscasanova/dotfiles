@@ -13,7 +13,7 @@ sudo fc-cache -fv
 git pull origin master
 
 # The symlinks
-ln -sfv "/home/leandro/dev/dotfiles/runcom/.profile" ~
+ln -sfv "/home/leandro/dev/dotfiles/runcom/.bashrc" ~
 ln -sfv "/home/leandro/dev/dotfiles/runcom/.inputrc" ~
 ln -sfv "/home/leandro/dev/dotfiles/git/.gitconfig" ~
 ln -sfv "/home/leandro/dev/dotfiles/git/.gitignore_global" ~
