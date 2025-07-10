@@ -4,6 +4,6 @@
 [credential]
 	helper = store
 [core]
-	excludesfile = /home/lscasanova/.gitignore
+	excludesfile = /home/lscasanova/.gitignore_global
 [init]
 	defaultBranch = main
