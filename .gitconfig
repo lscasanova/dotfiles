@@ -1,0 +1,9 @@
+[user]
+	name = Leandro Casanova
+	email = casanova.leandro@gmail.com
+[credential]
+	helper = store
+[core]
+	excludesfile = /home/lscasanova/.gitignore
+[init]
+	defaultBranch = main
