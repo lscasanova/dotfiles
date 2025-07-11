@@ -164,8 +164,11 @@ cdnvm() {
 
 alias cd='cdnvm'
 cdnvm "$PWD" || exit
+
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
+
 . "$HOME/.cargo/env"
+
 alias config='/usr/bin/git --git-dir=/home/lscasanova/.dotfiles/ --work-tree=/home/lscasanova'
