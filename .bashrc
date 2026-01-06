@@ -174,3 +174,14 @@ eval "$(pyenv init - bash)"
 . "$HOME/.cargo/env"
 
 
+
+# Created by `pipx` on 2025-08-26 22:02:52
+export PATH="$PATH:/home/lscasanova/.local/bin"
+
+# pnpm
+export PNPM_HOME="/home/lscasanova/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

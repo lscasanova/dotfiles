@@ -31,3 +31,6 @@ eval "$(pyenv init - bash)"
 
 . "$HOME/.cargo/env"
 
+
+# Created by `pipx` on 2025-08-26 22:02:52
+export PATH="$PATH:/home/lscasanova/.local/bin"
