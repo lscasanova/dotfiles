@@ -188,3 +188,4 @@ esac
 
 # Neovim
 export PATH="$PATH:/opt/nvim/"
+eval "$(pyenv virtualenv-init -)"
