@@ -189,3 +189,10 @@ esac
 # Neovim
 export PATH="$PATH:/opt/nvim/"
 eval "$(pyenv virtualenv-init -)"
+
+# opencode
+export PATH=/home/lscasanova/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/lscasanova/.local/bin:$PATH"

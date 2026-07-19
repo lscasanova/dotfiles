@@ -34,3 +34,7 @@ eval "$(pyenv init - bash)"
 
 # Created by `pipx` on 2025-08-26 22:02:52
 export PATH="$PATH:/home/lscasanova/.local/bin"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/lscasanova/.local/bin:$PATH"
